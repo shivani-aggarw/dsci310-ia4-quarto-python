@@ -12,6 +12,7 @@ execute:
   echo: false
 bibliography: references.bib
 editor: source
+output-dir: reports
 ---
 
 ```{python}
@@ -66,7 +67,7 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in @tbl-sd_pops we consider the sample standard deviation of the number of horses during the same time span as @fig-horse_pops.
 
-![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-sd_pops width=60%}
+![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-sd_pops width=60% fig-pos="H"}
 
 In @fig-sd_pops we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
