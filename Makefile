@@ -15,16 +15,16 @@ results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses
 		--out_dir="results"
 
 # render quarto report in HTML and PDF
-docs/index.html: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to html --output-dir ../docs
+docs/index.html: results reports/index.qmd
+	quarto render reports/index.qmd --to html --output-dir ../docs
 
-docs/index.pdf: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to pdf --output-dir ../docs
+docs/index.pdf: results reports/index.qmd
+	quarto render reports/index.qmd --to pdf --output-dir ../docs
 
 # clean
 clean:
 	rm -rf results
 	rm -rf docs/index.html \
 		docs/index.pdf \
-		docs/qmd_example_files
+		docs/index_files
 	rm -rf docs
